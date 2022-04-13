@@ -1,0 +1,75 @@
+
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+
+      /* Box sizing rules */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    /* Remove default margin */
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    figure,
+    blockquote,
+    dl,
+    dd {
+      margin: 0;
+    }
+
+    /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+    ul,
+    ol{
+      list-style: none;
+      padding-left: 0;
+    }
+
+    /* Set core root defaults */
+    html:focus-within {
+      scroll-behavior: smooth;
+    }
+
+    /* Set core body defaults */
+    body {
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+      line-height: 1.2;
+      font-size: ${({ theme }) => theme.font.size.fontBase};
+      font-family: ${({theme}) => theme.fontFamily}
+    }
+
+    /* A elements  default styles */
+    a {
+      text-decoration-skip-ink: auto;
+    }
+
+    /* Make images easier to work with */
+    img,
+    picture {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* Inherit fonts for inputs and buttons */
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    .text-center{
+      text-align: center;
+    }
+
+    .text-left{
+      text-align: left;
+    }
+`

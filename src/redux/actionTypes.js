@@ -1,0 +1,7 @@
+export const SET_NAME = "SET_NAME"
+export const SET_POKEMON_LIST = "SET_POKEMON_LIST"
+export const SET_LIST_TYPES = "SET_LIST_TYPES"
+export const SET_TOTAL_POKE = "SET_TOTAL_POKE"
+export const SET_ITEMS_TYPE = "SET_ITEMS_TYPE"
+export const QUERY_FORM = "QUERY_FORM"
+export const CLEAN_QUERY_FORM = "CLEAN_QUERY_FORM"
